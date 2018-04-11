@@ -34,6 +34,16 @@ describe("Evens function",()=>{
         expect(result).toEqual(expectedResult);
     });
 
+    test("should only return Even numbers", () => {
+        // Given
+        const input = [1,2,3,4,5,6,7,8,9,10];
+        const expectedResult = [2,4,6,8,10];
+        // When
+        const result = evens(input);
+        // Then
+        expect(result).toEqual(expectedResult);
+    });
+
 });
 
 describe("Odds function",()=>{
@@ -69,4 +79,15 @@ describe("Odds function",()=>{
         // Then
         expect(result).toEqual(expectedResult);
     });
+
+    test("should only return Odd numbers", () => {
+        // Given
+        const input = [1,2,3,4,5,6,7,8,9,10];
+        const expectedResult = [1,3,5,7,9];
+        // When
+        const result = odds(input);
+        // Then
+        expect(result).toEqual(expectedResult);
+    });
+
 });
