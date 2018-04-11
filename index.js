@@ -3,25 +3,11 @@ function isEven(num) {
 }
 
 function evens(arr){
-    const res = [];
-    
-    for(let i = 0; i< arr.length; i++){
-        if(isEven(arr[i]))
-            res.push(arr[i]);
-    }
-
-    return res;
+    return arr.filter((elem) => isEven(elem));
 }
 
 function odds(arr){
-    const res = [];
-    
-    for(let i = 0; i< arr.length; i++){
-        if(!isEven(arr[i]))
-            res.push(arr[i]);
-    }
-
-    return res;
+    return arr.filter((elem) => !isEven(elem));
 }
 
 module.exports = {
