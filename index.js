@@ -1,6 +1,10 @@
+function isEven(num) {
+    return num % 2 === 0;
+}
+
 function evens(arr){
     if(arr.length == 1){
-        if(arr[0] % 2 === 0)
+        if(isEven(arr[0]))
             return arr;
     }
     return [];
@@ -8,7 +12,7 @@ function evens(arr){
 
 function odds(arr){
     if(arr.length == 1){
-        if(arr[0] % 2 !== 0)
+        if(!isEven(arr[0]))
             return arr;
     }
     return [];
