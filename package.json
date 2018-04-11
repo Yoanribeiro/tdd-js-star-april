@@ -1,0 +1,31 @@
+{
+  "name": "js-star-april",
+  "version": "1.0.0",
+  "description": "TDD demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "jest": {
+    "notify": true,
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testMatch": [
+      "**/*.spec.js"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/coverage/**"
+    ],
+    "testEnvironment": "node"
+  },
+  "author": "yoanribeiro",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^21.2.1"
+  }
+}
